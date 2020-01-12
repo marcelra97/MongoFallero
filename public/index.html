@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongo Fallero</title>
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <style>
+        @import url("css/estilo.css");
+    </style>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4.js"> </script>
+   
+</head>
+
+<body>
+
+    <div id="cabecera">
+        
+            <div id="logo"></div>
+
+            <div id="hamburguesa"></div>
+        
+            <div id="formulario">
+
+                <div>
+                    <p>Seccion</p>
+                    <select name="filtroSeccion" id="seccion"></select>
+                </div>
+
+                <div>
+                    <p>Año de fundación</p>
+                    <input type="text" name="filtroAñoDesde" value="Desde">
+                    <input type="text" name="filtroAñoHasta" value="Hasta">
+                </div>
+
+                <div id="radios">
+                    <p><input type="radio" name="secciones" value="principal" checked>Principal</p>
+                    <p><input type="radio" name="secciones" value="infantil"> Infantil</p>
+                
+                </div>
+
+            </div>
+    </div>
+
+    <div id="principal"></div>
+
+</body>
+
+</html>
